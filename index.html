@@ -5,7 +5,192 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header>
+      <h1 class="visually-hidden">Седона в Аризонне, город для туристов</h1>
+      <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="City of Sedona Logo">
+      <nav>
+        <ul>
+          <li>
+            <a href="blank.html">Информация</a>
+          </li>
+          <li>
+            <a href="blank.html">Фото и видео</a>
+          </li>
+          <li>
+            <a href="blank.html">Карта штата</a>
+          </li>
+          <li>
+            <a href="catalog.html">Гостиницы</a>
+          </li>  
+        </ul>
+      </nav>
 
+    </header>
+
+    <main>
+
+
+    <section class="reasons">
+
+      <div class="intro">
+        <img class="intro-background" src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="View of Sedona">
+        <img class="welcome-logo" src="https://via.placeholder.com/457x351" width="457" height="351" alt="Welcome to Sedona">
+        <img class="welcome-shape" src="https://via.placeholder.com/1200x57" width="1200" height="57" alt="">
+      </div>
+
+      <div class="reasons-title">
+        <h2>
+          Седона — небольшой городок в Аризоне,заслуживающий большего!
+        </h2>
+
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+      </div>
+
+      <ul>
+        <li class="reason-item-blue">
+            <h3>Настоящий городок</h3>
+            <span> - &Nu; 1 - </span>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </li>
+
+        <li class="city-photo">
+          <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Photo of Sedona">
+        </li>
+
+        <li>
+          <ul>
+            <li class="habitation">
+              <img src="https://via.placeholder.com/75x72" width="75" height="72" alt="">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="food">
+              <img src="https://via.placeholder.com/75x70" width="75" height="70" alt="">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="souvenirs">
+              <img src="https://via.placeholder.com/64x77" width="64" height="77" alt="">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="city-photo">
+          <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Photo of Devil's Bridge">
+        </li>
+        
+        <li>
+          <div class="reason-item-blue">
+            <h3>Там есть Мост дьявола</h3>
+            <span> - &Nu; 2 - </span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="reason-item-grey">
+            <h3>небольшая площадь</h3>
+            <span> - &Nu; 3 - </span>
+            <p>все достопримечательности находятся очень близко</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="reason-item-grey">
+            <h3>красивая дорога</h3>
+            <span> - &Nu; 4 - </span>
+            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="reason-item-grey">
+            <h3>мало туристов</h3>
+            <span> - &Nu; 5 - </span>
+            <p>большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </li>  
+
+      </ul>
+    </section>
+
+    <section class="hotels-search">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <img src="https://via.placeholder.com/1200x595" width="1200" height="595" alt="Sedona on map">
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>
+            <button class="hotel-search">Поиск гостиницы в Седоне</button>
+          </legend>
+          <p>
+            <label for="checkin-date">Дата заезда:</label>
+            <input type="text" id="checkin-date" value="24 апреля 2017">
+            <button type="button" class="calendar-button visually-hidden">Календарь</button>
+          </p>
+
+          <p>
+            <label for="checkout-date">Дата выезда:</label>
+            <input type="text" id="checkout-date" value="4 июля 2017">
+            <button type="button" class="calendar-button visually-hidden">Календарь</button>
+          </p>
+
+          <p>
+            <label for="adults">Взрослые:</label>
+            <button type="button" class="minus-button">-</button>
+            <input type="text" id="adults" value="2">
+            <button type="button" class="plus-button">+</button>
+          </p>
+
+          <p>
+            <label for="children">Дети:</label>
+            <button type="button" class="minus-button">-</button>
+            <input type="text" id="children" value="0">
+            <button type="button" class="plus-button">+</button>
+          </p>
+
+          <a href="#">Найти</a>
+        </fieldset>  
+        
+      </form>
+    </section>
+
+    </main>
+
+    <footer>
+      <div class="contacts">
+        <p>
+          <a href="#">#visitSEDONA</a>
+        </p>
+        
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
+
+      <ul class="socials-list">
+        <li>
+          <a href="https://twitter.com">
+          <img src="img/twitter.svg" width="46" height="48" alt="Twitter Logo"></a>
+        </li>
+
+        <li>
+          <a href="https://facebook.com">
+            <img src="img/facebook.svg" width="46" height="48" alt="Facebook Logo"></a>
+        </li>
+        <li>
+          <a href="https://youtube.com">
+            <img src="img/youtube.svg" width="46" height="48" alt="Youtube Logo"></a>
+        </li>
+      </ul>
+
+      <div class="copyright"></div>
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru">
+      <img src="img/academy.svg" width="115" height="41" alt="HTML Academy Logo"></a>
+    </footer>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
