@@ -68,7 +68,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--basic-grey);
+  color: var(--basic-dark);
   text-transform: uppercase;
   background-color: var(--primary-light);
 }
@@ -81,6 +81,11 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* Main Navigation */
@@ -148,14 +153,14 @@ img {
 }
 
 .reasons-title:before {
-  content: url(../img/decor/Shape_welcome.svg);
+  background-image: url(../img/decor/Shape_welcome.svg);
 
 
 
 
 }
 
-.reasons-title h3 {
+.reasons-title-heading {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
@@ -163,7 +168,7 @@ img {
   color: var(--primary-dark);
 }
 
-.reasons-title p {
+.reasons-title-text {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
@@ -178,15 +183,23 @@ img {
 
 }
 
-.reason-item-decoration {
-  background-color: var(--basic-light);
-  color: var(--primary-light);
-  text-align: center;
-  vertical-align: middle;
+
+
+.reason-item {
+
 
 }
 
-.reason-item-decoration h3 {
+.decoration-contrast {
+  background-color: var(--basic-light);
+  color: var(--primary-light);
+  text-align: center;
+
+
+}
+
+
+.decoration-contrast-heading {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -194,17 +207,15 @@ img {
 
 }
 
-.reason-item-decoration span p {
 
-}
 
-.reasons-features-item {
+.reason-features-item {
   list-style: none;
   color: var(--basic-dark);
 
 }
 
-.reasons-features-item h3 {
+.reason-features-heading {
   color: var(--primary-dark);
   font-size: 21px;
   line-height: 21px;
@@ -212,18 +223,20 @@ img {
 
 }
 
-.reason-item-grey {
+.decoration-accent {
   background-color: var(--main-bg-row);
 
 
 }
 
-.reason-item-grey h3 {
+.decoration-accent-heading {
   color: var(--primary-dark);
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
+
+/* Hotels Search Form*/
 
 .hotels-search {
   text-align: center;
@@ -235,7 +248,7 @@ img {
 
 }
 
-.hotels-search-intro h2 {
+.hotels-search-heading {
   color: var(--primary-dark);
   font-size: 30px;
   line-height: 24px;
@@ -278,18 +291,12 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-
-}
-
-
-
-.check-date p {
   text-align: left;
 
 }
 
-.hotels-search-date input,
-.visitors-number input {
+
+.hotels-search-inputfield {
   display: block;
   width: 346px;
   height: 38px;
@@ -428,17 +435,17 @@ img {
 }
 
 
-.academy-icon + svg {
+.academy-icon {
   fill: var(--academy-logo-idle);
 
 }
 
-.academy-icon + svg:hover {
+.academy-icon:hover {
   fill: var(--basic-light);
 }
 
-.academy-icon svg:active,
-.academy-icon svg:focus {
+.academy-icon:active,
+.academy-icon:focus {
   fill: var(--academy-logo-active);
 }
 
@@ -454,7 +461,7 @@ img {
 
 }
 
-.hotel-options fieldset {
+.hotel-options-check {
   border: none;
 
 }
@@ -490,7 +497,11 @@ img {
   color: var(--checkbox-disabled);
 }
 
-.hotel-price-range input {
+.hotel-price-range {
+  border: none;
+}
+
+.hotel-price-sum {
   border: 2px solid var(--primary-light);
   border-radius: 2px;
   text-align: center;
@@ -499,7 +510,6 @@ img {
 
 
 }
-
 
 
 .hotel-price-result {
@@ -527,7 +537,7 @@ img {
   font-weight: 700;
 }
 
-.hotel-search-total p {
+.hotel-search-text {
   color: var(--primary-dark);
   font-size: 12px;
   line-height: 18px;
@@ -572,24 +582,28 @@ img {
 
 }
 
-.arrow svg {
+.arrow-ascending,
+.arrow-descending {
   fill: var(--hotel-result-arrow);
 
 }
 
-.arrow svg:hover {
+.arrow-ascending:hover,
+.arrow-descending:hover {
   fill: var(--primary-dark);
 }
 
-.arrow svg:active,
-.arrow svg:focus {
+.arrow-ascending:active,
+.arrow-descending:active,
+.arrow-ascending:focus,
+.arrow-descending:focus {
   fill: var(--basic-light);
 }
 
-.idle svg {
-
-  border-bottom: none;
+.arrow-descending .current {
+  color: var(--basic-light);
 }
+
 
 .hotels-list {
   list-style: none;
@@ -599,18 +613,18 @@ img {
   text-align: left;
 }
 
-.hotel-item h2 {
+.hotel-item-title {
   color: var(--primary-dark);
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.hotel-item h2:hover {
+.hotel-item-title:hover {
   color: var(--basic-light);
 }
 
-.hotel-item h2:active {
+.hotel-item-title:active {
   color: var(--rgb-primary-black-tr30);
 }
 
@@ -661,7 +675,7 @@ img {
 
 }
 
-hotel-stars {
+.hotel-stars {
   width: 19;
   height: 17px;
   background-image: url(/img/decor/star.svg);
