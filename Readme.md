@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Н](https://up.htmlacademy.ru/htmlcss/30/user/1537675).
-* Наставник: [Алексей Беляев](https://htmlacademy.ru/profile/id691043).
+* Наставник: [Арсений Матыцин](https://htmlacademy.ru/profile/id225539).
 
 ---
 
